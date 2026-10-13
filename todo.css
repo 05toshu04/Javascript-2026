@@ -1,0 +1,73 @@
+/* ---------- Page ---------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;      /* light grey-blue background */
+    max-width: 500px;               /* keeps the app in the middle, not too wide */
+    margin: 40px auto;              /* auto left-right = center on screen */
+    padding: 0 20px;
+}
+
+/* ---------- Heading ---------- */
+h1 {
+    text-align: center;
+    color: #1e3a5f;                 /* dark blue */
+}
+
+/* ---------- Input box ---------- */
+input {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;          /* blue border when typing */
+}
+
+/* ---------- Buttons (Add Task) ---------- */
+button {
+    padding: 10px 16px;
+    background-color: #2563eb;      /* blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;      /* slightly darker blue on hover */
+}
+
+/* ---------- Task list ---------- */
+ul {
+    list-style: none;               /* remove bullet points */
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    display: flex;                  /* task text on left, Delete on right */
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Delete button (only buttons inside li) ---------- */
+li button {
+    background-color: #ef4444;      /* red */
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #dc2626;
+}
